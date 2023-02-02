@@ -16,6 +16,10 @@ if(POLICY CMP0077)
   cmake_policy(SET CMP0077 NEW)
 endif()
 
+if(POLICY CMP0068)
+  cmake_policy(SET CMP0068 NEW)
+endif()
+
 option(IMGUI_SFML_BUILD_EXAMPLES "Build ImGui_SFML examples" OFF)
 option(IMGUI_SFML_FIND_SFML "Use find_package to find SFML" ON)
 option(IMGUI_SFML_IMGUI_DEMO "Build imgui_demo.cpp" OFF)
